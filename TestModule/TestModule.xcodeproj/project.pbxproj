@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		716361141E06AA1300680316 /* TestModule.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 716361131E06AA1300680316 /* TestModule.h */; };
 		716361161E06AA1300680316 /* TestModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 716361151E06AA1300680316 /* TestModule.m */; };
+		716361611E06BCF800680316 /* TestModuleHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 7163611C1E06AA4400680316 /* TestModuleHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		716361621E06BCF800680316 /* TestModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 716361131E06AA1300680316 /* TestModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		716361951E06BDEE00680316 /* TestModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 716361151E06AA1300680316 /* TestModule.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,8 +32,9 @@
 		716361131E06AA1300680316 /* TestModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestModule.h; sourceTree = "<group>"; };
 		716361151E06AA1300680316 /* TestModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestModule.m; sourceTree = "<group>"; };
 		7163611C1E06AA4400680316 /* TestModuleHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestModuleHeader.h; sourceTree = "<group>"; };
-		716361381E06AF9900680316 /* TestModule-Framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "TestModule-Framework.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		716361381E06AF9900680316 /* TestModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TestModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7163613C1E06AF9900680316 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		716361961E06BE9B00680316 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				716361101E06AA1300680316 /* libTestModule.a */,
-				716361381E06AF9900680316 /* TestModule-Framework.framework */,
+				716361381E06AF9900680316 /* TestModule.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -75,6 +79,7 @@
 				7163611C1E06AA4400680316 /* TestModuleHeader.h */,
 				716361131E06AA1300680316 /* TestModule.h */,
 				716361151E06AA1300680316 /* TestModule.m */,
+				716361961E06BE9B00680316 /* module.modulemap */,
 			);
 			path = TestModule;
 			sourceTree = "<group>";
@@ -94,6 +99,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				716361611E06BCF800680316 /* TestModuleHeader.h in Headers */,
+				716361621E06BCF800680316 /* TestModule.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,7 +139,7 @@
 			);
 			name = "TestModule-Framework";
 			productName = "TestModule-Framework";
-			productReference = 716361381E06AF9900680316 /* TestModule-Framework.framework */;
+			productReference = 716361381E06AF9900680316 /* TestModule.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -193,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				716361951E06BDEE00680316 /* TestModule.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,7 +317,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wzr.www.TestModule-Framework";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -329,7 +337,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wzr.www.TestModule-Framework";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
