@@ -10,4 +10,10 @@
    <FileRef
       location = "group:TestSubmodule/TestSubmodule.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:TestSubmoduleOfFramework/TestSubmoduleOfFramework.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:TestSubmoduleOfDynamicFramework/TestSubmoduleOfDynamicFramework.xcodeproj">
+   </FileRef>
 </Workspace>
