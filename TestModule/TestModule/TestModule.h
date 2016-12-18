@@ -10,4 +10,6 @@
 
 @interface TestModule : NSObject
 
+-(void)testModuleApi;
+
 @end

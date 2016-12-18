@@ -10,4 +10,8 @@
 
 @implementation TestModule
 
+-(void)testModuleApi{
+    NSLog(@"test module api");
+}
+
 @end
