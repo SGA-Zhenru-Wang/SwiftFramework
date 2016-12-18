@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		716361141E06AA1300680316 /* TestModule.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 716361131E06AA1300680316 /* TestModule.h */; };
 		716361161E06AA1300680316 /* TestModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 716361151E06AA1300680316 /* TestModule.m */; };
+		7163613B1E06AF9900680316 /* TestModule-Framework.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7163613A1E06AF9900680316 /* TestModule-Framework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -19,6 +20,7 @@
 			dstSubfolderSpec = 16;
 			files = (
 				716361141E06AA1300680316 /* TestModule.h in CopyFiles */,
+				7163613B1E06AF9900680316 /* TestModule-Framework.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -29,10 +31,20 @@
 		716361131E06AA1300680316 /* TestModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestModule.h; sourceTree = "<group>"; };
 		716361151E06AA1300680316 /* TestModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestModule.m; sourceTree = "<group>"; };
 		7163611C1E06AA4400680316 /* TestModuleHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestModuleHeader.h; sourceTree = "<group>"; };
+		716361381E06AF9900680316 /* TestModule-Framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "TestModule-Framework.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7163613A1E06AF9900680316 /* TestModule-Framework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestModule-Framework.h"; sourceTree = "<group>"; };
+		7163613C1E06AF9900680316 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		7163610D1E06AA1300680316 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		716361341E06AF9900680316 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -46,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				716361121E06AA1300680316 /* TestModule */,
+				716361391E06AF9900680316 /* TestModule-Framework */,
 				716361111E06AA1300680316 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				716361101E06AA1300680316 /* libTestModule.a */,
+				716361381E06AF9900680316 /* TestModule-Framework.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,7 +82,26 @@
 			path = TestModule;
 			sourceTree = "<group>";
 		};
+		716361391E06AF9900680316 /* TestModule-Framework */ = {
+			isa = PBXGroup;
+			children = (
+				7163613A1E06AF9900680316 /* TestModule-Framework.h */,
+				7163613C1E06AF9900680316 /* Info.plist */,
+			);
+			path = "TestModule-Framework";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		716361351E06AF9900680316 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		7163610F1E06AA1300680316 /* TestModule */ = {
@@ -88,6 +121,24 @@
 			productReference = 716361101E06AA1300680316 /* libTestModule.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		716361371E06AF9900680316 /* TestModule-Framework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7163613D1E06AF9900680316 /* Build configuration list for PBXNativeTarget "TestModule-Framework" */;
+			buildPhases = (
+				716361331E06AF9900680316 /* Sources */,
+				716361341E06AF9900680316 /* Frameworks */,
+				716361351E06AF9900680316 /* Headers */,
+				716361361E06AF9900680316 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TestModule-Framework";
+			productName = "TestModule-Framework";
+			productReference = 716361381E06AF9900680316 /* TestModule-Framework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -98,6 +149,9 @@
 				ORGANIZATIONNAME = wzr;
 				TargetAttributes = {
 					7163610F1E06AA1300680316 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					716361371E06AF9900680316 = {
 						CreatedOnToolsVersion = 7.2.1;
 					};
 				};
@@ -115,9 +169,20 @@
 			projectRoot = "";
 			targets = (
 				7163610F1E06AA1300680316 /* TestModule */,
+				716361371E06AF9900680316 /* TestModule-Framework */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		716361361E06AF9900680316 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7163610C1E06AA1300680316 /* Sources */ = {
@@ -125,6 +190,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				716361161E06AA1300680316 /* TestModule.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		716361331E06AF9900680316 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +301,46 @@
 			};
 			name = Release;
 		};
+		7163613E1E06AF9900680316 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "TestModule-Framework/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wzr.www.TestModule-Framework";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7163613F1E06AF9900680316 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "TestModule-Framework/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wzr.www.TestModule-Framework";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -246,6 +358,14 @@
 			buildConfigurations = (
 				7163611A1E06AA1300680316 /* Debug */,
 				7163611B1E06AA1300680316 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7163613D1E06AF9900680316 /* Build configuration list for PBXNativeTarget "TestModule-Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7163613E1E06AF9900680316 /* Debug */,
+				7163613F1E06AF9900680316 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
