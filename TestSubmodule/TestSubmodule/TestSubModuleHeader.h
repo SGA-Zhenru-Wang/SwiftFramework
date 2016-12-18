@@ -9,6 +9,6 @@
 #ifndef TestSubModuleHeader_h
 #define TestSubModuleHeader_h
 
-#import <TestSubModule/TestSubmodule.h>
-
 #endif /* TestSubModuleHeader_h */
+
+#import <TestSubModule/TestSubmodule.h>

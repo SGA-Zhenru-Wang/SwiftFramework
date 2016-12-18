@@ -16,4 +16,4 @@ FOUNDATION_EXPORT const unsigned char TestSubmoduleOfFrameworkVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <TestSubmoduleOfFramework/PublicHeader.h>
 
-
+#import <TestSubmoduleOfFramework/TestObjectOfSubModuleFramework.h>
