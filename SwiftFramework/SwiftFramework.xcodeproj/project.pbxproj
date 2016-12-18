@@ -8,17 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		716361A61E06C29E00680316 /* SwiftFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 716361A51E06C29E00680316 /* SwiftFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		716361B11E06C60100680316 /* TestModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 716361B01E06C60100680316 /* TestModule.framework */; };
 		716361B31E06C69100680316 /* SwiftCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716361B21E06C69100680316 /* SwiftCode.swift */; };
 		716361B41E06C8EB00680316 /* SwiftCode.swift in Headers */ = {isa = PBXBuildFile; fileRef = 716361B21E06C69100680316 /* SwiftCode.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		716362A31E06E01E00680316 /* libTestSubmodule.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 716362961E06E01E00680316 /* libTestSubmodule.a */; };
+		716362A51E06E01E00680316 /* TestModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 716362981E06E01E00680316 /* TestModule.framework */; };
+		716362A61E06E01E00680316 /* TestSubmoduleOfDynamicFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 716362991E06E01E00680316 /* TestSubmoduleOfDynamicFramework.framework */; };
+		716362A71E06E01E00680316 /* TestSubmoduleOfFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7163629A1E06E01E00680316 /* TestSubmoduleOfFramework.framework */; };
+		716362A91E06E01E00680316 /* libTestSubmodule.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7163629F1E06E01E00680316 /* libTestSubmodule.a */; };
+		716362AA1E06E01E00680316 /* TestSubmoduleOfDynamicFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 716362A01E06E01E00680316 /* TestSubmoduleOfDynamicFramework.framework */; };
+		716362AB1E06E01E00680316 /* TestSubmoduleOfFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 716362A11E06E01E00680316 /* TestSubmoduleOfFramework.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		716361A21E06C29E00680316 /* SwiftFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		716361A51E06C29E00680316 /* SwiftFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftFramework.h; sourceTree = "<group>"; };
 		716361A71E06C29E00680316 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		716361B01E06C60100680316 /* TestModule.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TestModule.framework; sourceTree = "<group>"; };
 		716361B21E06C69100680316 /* SwiftCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftCode.swift; sourceTree = "<group>"; };
+		716362951E06E01E00680316 /* TestSubmodule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestSubmodule.h; sourceTree = "<group>"; };
+		716362961E06E01E00680316 /* libTestSubmodule.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestSubmodule.a; sourceTree = "<group>"; };
+		716362981E06E01E00680316 /* TestModule.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TestModule.framework; sourceTree = "<group>"; };
+		716362991E06E01E00680316 /* TestSubmoduleOfDynamicFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TestSubmoduleOfDynamicFramework.framework; sourceTree = "<group>"; };
+		7163629A1E06E01E00680316 /* TestSubmoduleOfFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TestSubmoduleOfFramework.framework; sourceTree = "<group>"; };
+		7163629E1E06E01E00680316 /* TestSubmodule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestSubmodule.h; sourceTree = "<group>"; };
+		7163629F1E06E01E00680316 /* libTestSubmodule.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestSubmodule.a; sourceTree = "<group>"; };
+		716362A01E06E01E00680316 /* TestSubmoduleOfDynamicFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TestSubmoduleOfDynamicFramework.framework; sourceTree = "<group>"; };
+		716362A11E06E01E00680316 /* TestSubmoduleOfFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TestSubmoduleOfFramework.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,7 +40,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				716361B11E06C60100680316 /* TestModule.framework in Frameworks */,
+				716362A51E06E01E00680316 /* TestModule.framework in Frameworks */,
+				716362A61E06E01E00680316 /* TestSubmoduleOfDynamicFramework.framework in Frameworks */,
+				716362AA1E06E01E00680316 /* TestSubmoduleOfDynamicFramework.framework in Frameworks */,
+				716362A31E06E01E00680316 /* libTestSubmodule.a in Frameworks */,
+				716362AB1E06E01E00680316 /* TestSubmoduleOfFramework.framework in Frameworks */,
+				716362A91E06E01E00680316 /* libTestSubmodule.a in Frameworks */,
+				716362A71E06E01E00680316 /* TestSubmoduleOfFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,9 +83,65 @@
 		716361AF1E06C60100680316 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				716361B01E06C60100680316 /* TestModule.framework */,
+				716362921E06E01E00680316 /* Debug-iphoneos */,
+				7163629B1E06E01E00680316 /* Debug-iphonesimulator */,
 			);
 			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		716362921E06E01E00680316 /* Debug-iphoneos */ = {
+			isa = PBXGroup;
+			children = (
+				716362931E06E01E00680316 /* include */,
+				716362961E06E01E00680316 /* libTestSubmodule.a */,
+				716362981E06E01E00680316 /* TestModule.framework */,
+				716362991E06E01E00680316 /* TestSubmoduleOfDynamicFramework.framework */,
+				7163629A1E06E01E00680316 /* TestSubmoduleOfFramework.framework */,
+			);
+			path = "Debug-iphoneos";
+			sourceTree = "<group>";
+		};
+		716362931E06E01E00680316 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				716362941E06E01E00680316 /* TestSubmodule */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		716362941E06E01E00680316 /* TestSubmodule */ = {
+			isa = PBXGroup;
+			children = (
+				716362951E06E01E00680316 /* TestSubmodule.h */,
+			);
+			path = TestSubmodule;
+			sourceTree = "<group>";
+		};
+		7163629B1E06E01E00680316 /* Debug-iphonesimulator */ = {
+			isa = PBXGroup;
+			children = (
+				7163629C1E06E01E00680316 /* include */,
+				7163629F1E06E01E00680316 /* libTestSubmodule.a */,
+				716362A01E06E01E00680316 /* TestSubmoduleOfDynamicFramework.framework */,
+				716362A11E06E01E00680316 /* TestSubmoduleOfFramework.framework */,
+			);
+			path = "Debug-iphonesimulator";
+			sourceTree = "<group>";
+		};
+		7163629C1E06E01E00680316 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				7163629D1E06E01E00680316 /* TestSubmodule */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		7163629D1E06E01E00680316 /* TestSubmodule */ = {
+			isa = PBXGroup;
+			children = (
+				7163629E1E06E01E00680316 /* TestSubmodule.h */,
+			);
+			path = TestSubmodule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,10 +330,17 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/SwiftFramework/Frameworks",
+					"$(PROJECT_DIR)/SwiftFramework/Frameworks/Debug-iphoneos",
+					"$(PROJECT_DIR)/SwiftFramework/Frameworks/Debug-iphonesimulator",
 				);
 				INFOPLIST_FILE = SwiftFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SwiftFramework/Frameworks/Debug-iphoneos",
+					"$(PROJECT_DIR)/SwiftFramework/Frameworks/Debug-iphonesimulator",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wzr.www.SwiftFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -276,10 +359,17 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/SwiftFramework/Frameworks",
+					"$(PROJECT_DIR)/SwiftFramework/Frameworks/Debug-iphoneos",
+					"$(PROJECT_DIR)/SwiftFramework/Frameworks/Debug-iphonesimulator",
 				);
 				INFOPLIST_FILE = SwiftFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SwiftFramework/Frameworks/Debug-iphoneos",
+					"$(PROJECT_DIR)/SwiftFramework/Frameworks/Debug-iphonesimulator",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wzr.www.SwiftFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -305,6 +395,7 @@
 				716361AC1E06C29E00680316 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
