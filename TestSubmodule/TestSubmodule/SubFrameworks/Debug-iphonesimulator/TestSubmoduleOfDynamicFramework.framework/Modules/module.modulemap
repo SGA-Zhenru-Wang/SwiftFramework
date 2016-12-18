@@ -1,0 +1,6 @@
+framework module TestSubmoduleOfDynamicFramework {
+  umbrella header "TestSubmoduleOfDynamicFramework.h"
+
+  export *
+  module * { export * }
+}
