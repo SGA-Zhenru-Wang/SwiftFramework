@@ -2,9 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:SwiftFramework/SwiftFramework.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:TestModule/TestModule.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:SwiftFramework/SwiftFramework.xcodeproj">
+      location = "group:TestSubmodule/TestSubmodule.xcodeproj">
    </FileRef>
 </Workspace>
