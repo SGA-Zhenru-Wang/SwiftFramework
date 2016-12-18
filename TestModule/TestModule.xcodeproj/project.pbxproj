@@ -34,7 +34,7 @@
 		7163611C1E06AA4400680316 /* TestModuleHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestModuleHeader.h; sourceTree = "<group>"; };
 		716361381E06AF9900680316 /* TestModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TestModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7163613C1E06AF9900680316 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		716361961E06BE9B00680316 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		716361971E06BFBC00680316 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +79,6 @@
 				7163611C1E06AA4400680316 /* TestModuleHeader.h */,
 				716361131E06AA1300680316 /* TestModule.h */,
 				716361151E06AA1300680316 /* TestModule.m */,
-				716361961E06BE9B00680316 /* module.modulemap */,
 			);
 			path = TestModule;
 			sourceTree = "<group>";
@@ -88,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				7163613C1E06AF9900680316 /* Info.plist */,
+				716361971E06BFBC00680316 /* module.modulemap */,
 			);
 			path = "TestModule-Framework";
 			sourceTree = "<group>";
@@ -316,6 +316,7 @@
 				INFOPLIST_FILE = "TestModule-Framework/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "TestModule-Framework/module.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wzr.www.TestModule-Framework";
 				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SKIP_INSTALL = YES;
@@ -336,6 +337,7 @@
 				INFOPLIST_FILE = "TestModule-Framework/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "TestModule-Framework/module.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wzr.www.TestModule-Framework";
 				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SKIP_INSTALL = YES;
